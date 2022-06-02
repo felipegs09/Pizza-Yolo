@@ -14,7 +14,11 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- ----------------------------------- -->
+    <!-- -------------SWIPER---------------- -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <nav id="navigation">
@@ -30,6 +34,9 @@
             </li>
             <li><a onclick="closeMenu()" href="#foodMenu">Cardápio</a></li>
             <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
+            <li>
+              <a onclick="closeMenu()" href="#testimonials">Depoimentos</a>
+            </li>
           </ul>
 
           <a href="#contact" class="button" onclick="closeMenu()"
@@ -415,6 +422,84 @@
       </div>
     </section>
 
+    <section id="testimonials">
+      <div class="wrapper">
+        <div class="col-a">
+          <header>
+            <h4>Depoimentos</h4>
+            <h2>Veja a opinião de nossos clientes!</h2>
+          </header>
+        </div>
+        <div class="col-b">
+          <div class="content swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Ex mollitia, soluta quae accusantium odit
+                    corrupti fugit, eius, excepturi quidem laborum maiores
+                    itaque. Voluptas officiis voluptates error doloremque cumque
+                    vitae perferendis.
+                  </p>
+                  <cite>
+                    <img src="./assets/Cléber.jpg" alt="" />
+                    Cléber rebèlC
+                  </cite>
+                </blockquote>
+              </div>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Ex mollitia, soluta quae accusantium odit
+                    corrupti fugit, eius, excepturi quidem laborum maiores
+                    itaque. Voluptas officiis voluptates error doloremque cumque
+                    vitae perferendis.
+                  </p>
+                  <cite>
+                    <img src="./assets/Lissandra.jpg" alt="" />
+                    Lissandra ardnassiL
+                  </cite>
+                </blockquote>
+              </div>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Ex mollitia, soluta quae accusantium odit
+                    corrupti fugit, eius, excepturi quidem laborum maiores
+                    itaque. Voluptas officiis voluptates error doloremque cumque
+                    vitae perferendis.
+                  </p>
+                  <cite>
+                    <img src="./assets/Paloma.jpg" alt="" />
+                    Paloma amolaP
+                  </cite>
+                </blockquote>
+              </div>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Ex mollitia, soluta quae accusantium odit
+                    corrupti fugit, eius, excepturi quidem laborum maiores
+                    itaque. Voluptas officiis voluptates error doloremque cumque
+                    vitae perferendis.
+                  </p>
+                  <cite>
+                    <img src="./assets/Luiz.jpg" alt="" />
+                    Luiz ziuL
+                  </cite>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
     <section id="contact">
       <div class="wrapper">
         <div class="col-a">
@@ -632,7 +717,8 @@
 
     <!-----------SCROLL_REVEAL-------------- -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
+    <!-- --------------SWIPER--------------- -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./script-index.js"></script>
   </body>
 </html>
