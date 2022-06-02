@@ -3,15 +3,17 @@
   font-size: 62.5%; /* 1rem = 10px */
 
   /* -----------VARIAVEIS------------ */
-  --hue: 170;
+  --hue: 240;
   --primary-color: hsl(var(--hue), 100%, 26%);
   --headline-color: hsl(210, 11%, 15%);
   --paragraph-color: hsl(210, 9%, 31%);
   --brand-beige: hsl(39, 100%, 97%);
+  --brand-yellow: hsla(60, 100%, 95%, 0.8);
   --brand-light: hsl(calc(var(--hue)-22), 23%, 89%);
   --brand-light-2: hsl(calc(--hue + 10), 14%, 97%);
   --bg-light: hsl(100, 14%, 97%);
   --button-hover: hsl(var(--hue), 100%, 14%);
+  --cite-color: hsla(0, 0%, 46%, 1);
 
   --nav-height: 7.2rem;
 }
@@ -234,7 +236,7 @@ body.menuExpanded .menu {
 .menu ul:nth-child(1) {
   display: flex;
   flex-direction: column;
-  gap: 4.8rem;
+  gap: 4rem;
 
   margin-top: 6rem;
 
@@ -372,7 +374,7 @@ body.menuExpanded .closeMenu path {
 #foodMenu .cards {
   display: flex;
   flex-direction: column;
-  gap: foodMenu;
+  gap: 1.6rem;
 }
 
 #foodMenu .card {
@@ -436,6 +438,71 @@ body.menuExpanded .closeMenu path {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+}
+
+/* ------------TESTIMONIALS------------ */
+#testimonials {
+  background: var(--brand-yellow);
+  display: block;
+}
+
+#testimonials header {
+  margin-bottom: 4rem;
+}
+
+#testimonials .wrapper {
+  overflow-x: hidden;
+}
+
+#testimonials blockquote {
+  padding: 3.2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0.4rem;
+}
+
+#testimonials blockquote p {
+  text-align: justify;
+
+  position: relative;
+  text-indent: 3rem;
+
+  margin-bottom: 2.4rem;
+}
+
+#testimonials blockquote p span {
+  color: var(--primary-color);
+  font: 700 4rem serif;
+
+  position: absolute;
+  top: -1rem;
+  left: -3rem;
+}
+
+#testimonials cite {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+
+  color: var(--cite-color);
+}
+
+#testimonials cite img {
+  width: 3.2rem;
+  height: 3.2rem;
+  object-fit: cover;
+
+  clip-path: circle();
+
+  margin-right: 0.8rem;
+}
+/* ------testimonials-swiper--------- */
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--primary-color);
 }
 
 /* ---------FOOTER------------------- */
@@ -553,6 +620,7 @@ footer .socialLinks {
   nav#navigation .menu ul:nth-child(1) {
     display: flex;
     gap: 3.2rem;
+    transform: translateX(-12%);
   }
 
   nav#navigation .menu ul li a {
@@ -578,7 +646,7 @@ footer .socialLinks {
   }
 
   nav#navigation.scroll .menu ul li a {
-    color: var(--brand-light-2);
+    color: white;
     opacity: 0.6;
   }
 
@@ -727,6 +795,15 @@ footer .socialLinks {
   #about img {
     height: 40rem;
     width: 60rem;
+  }
+
+  /* -------------TESTIMONIALS------------- */
+  #testimonials .wrapper {
+    grid-template-columns: 48rem 1fr;
+    grid-template-areas:
+      'A A'
+      'B B';
+    gap: 6.7rem;
   }
 
   /* -------------CONTACT---------------- */
