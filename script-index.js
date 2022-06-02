@@ -60,7 +60,16 @@ function openMenu() {
 function closeMenu() {
   document.body.classList.remove('menuExpanded')
 }
-
+// ------------SWIPER---------------
+const swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  pagination: {
+    el: '.swiper-pagination'
+  },
+  mousewhell: true,
+  keyboard: true
+})
+// ------------SCROLL-REVEAL---------------
 ScrollReveal({
   origin: 'top',
   distance: '30px',
@@ -74,4 +83,6 @@ ScrollReveal({
   #foodMenu .card,
   #about,
   #about header,
-  #about .content`)
+  #about .content,
+  #testimonials,
+  #contact`)
